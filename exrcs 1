@@ -1,0 +1,242 @@
+hduser@student-OptiPlex-3020:~$ git -- ver
+Unknown option: --
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+hduser@student-OptiPlex-3020:~$ git -- version
+Unknown option: --
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+hduser@student-OptiPlex-3020:~$ git --version
+git version 2.7.4
+hduser@student-OptiPlex-3020:~$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hduser@student-OptiPlex-3020:~$ git --version
+git version 2.7.4
+hduser@student-OptiPlex-3020:~$ cd Desktop
+hduser@student-OptiPlex-3020:~/Desktop$ mkdir Shabs
+hduser@student-OptiPlex-3020:~/Desktop$ cd Shabs
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ gti init
+No command 'gti' found, did you mean:
+ Command 'gsi' from package 'gambc' (universe)
+ Command 'gtf' from package 'xserver-xorg-core' (main)
+ Command 'gtg' from package 'gtg' (universe)
+ Command 'gri' from package 'gri' (universe)
+ Command 'gtv' from package 'smpeg-gtv' (universe)
+ Command 'ti' from package 'ticgit' (universe)
+ Command 'gt' from package 'genometools' (universe)
+ Command 'git' from package 'git' (main)
+ Command 'gt5' from package 'gt5' (universe)
+ Command 'bti' from package 'bti' (universe)
+gti: command not found
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git init
+Initialized empty Git repository in /home/hduser/Desktop/Shabs/.git/
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ la
+.git
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ cat >file
+shabu is amad genius.
+george is a ^[[D^[[D
+testing testing 
+over
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ ls
+file
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ cat >file
+shabu
+george
+donal
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ ls
+file
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git add file
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git statud
+git: 'statud' is not a git command. See 'git --help'.
+
+Did you mean this?
+	status
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   file
+
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   file
+
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git commit 
+Aborting commit due to empty commit message.
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git commit -m "adding a txt file"
+[master (root-commit) 7acf09c] adding a txt file
+ 1 file changed, 3 insertions(+)
+ create mode 100644 file
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ cowsay
+The program 'cowsay' is currently not installed. To run 'cowsay' please ask your administrator to install the package 'cowsay'
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git config --global user.name "nihal"
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git config --global user.name
+nihal
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git log
+commit 7acf09cf03bf6878e7c51979ef9a0aadff0cc8fe
+Author: Sona James <sonakunnapillil@gmail.com>
+Date:   Tue May 14 10:48:37 2019 +0530
+
+    adding a txt file
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git commit -m "adding a txt file"
+On branch master
+nothing to commit, working directory clean
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git log
+commit 7acf09cf03bf6878e7c51979ef9a0aadff0cc8fe
+Author: Sona James <sonakunnapillil@gmail.com>
+Date:   Tue May 14 10:48:37 2019 +0530
+
+    adding a txt file
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git config --global user.name
+nihal
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ cat >f1
+a
+b
+c
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ cat >f2
+1
+2
+3
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ cat >f3
+!
+@
+#
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	f1
+	f2
+	f3
+
+nothing added to commit but untracked files present (use "git add" to track)
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+Did you mean this?
+	add
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git add .
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git commit -m "adding a more txt file"
+[master bc381f9] adding a more txt file
+ 3 files changed, 9 insertions(+)
+ create mode 100644 f1
+ create mode 100644 f2
+ create mode 100644 f3
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ echo "d
+> bash: unexpected EOF while looking for matching `"'
+bash: syntax error: unexpected end of file
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ echo "d
+> g
+> bash: unexpected EOF while looking for matching `"'
+bash: syntax error: unexpected end of file
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ echo "d g s" >>file
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ cat file
+shabu
+george
+donal
+d g s
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git commit -m "adding a more txt file"
+On branch master
+Changes not staged for commit:
+	modified:   file
+
+no changes added to commit
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git commit -m "new commit"
+On branch master
+Changes not staged for commit:
+	modified:   file
+
+no changes added to commit
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ gfit log
+No command 'gfit' found, did you mean:
+ Command 'gfio' from package 'gfio' (universe)
+ Command 'gfix' from package 'firebird2.5-super' (universe)
+ Command 'gfix' from package 'firebird2.5-classic-common' (universe)
+ Command 'gift' from package 'gnuift' (universe)
+ Command 'git' from package 'git' (main)
+gfit: command not found
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git log
+commit bc381f926f0d0571d9717fb309c6b3fef30411f9
+Author: nihal <sonakunnapillil@gmail.com>
+Date:   Tue May 14 11:02:56 2019 +0530
+
+    adding a more txt file
+
+commit 7acf09cf03bf6878e7c51979ef9a0aadff0cc8fe
+Author: Sona James <sonakunnapillil@gmail.com>
+Date:   Tue May 14 10:48:37 2019 +0530
+
+    adding a txt file
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git commit -m "new commit"
+On branch master
+Changes not staged for commit:
+	modified:   file
+
+no changes added to commit
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git log
+commit bc381f926f0d0571d9717fb309c6b3fef30411f9
+Author: nihal <sonakunnapillil@gmail.com>
+Date:   Tue May 14 11:02:56 2019 +0530
+
+    adding a more txt file
+
+commit 7acf09cf03bf6878e7c51979ef9a0aadff0cc8fe
+Author: Sona James <sonakunnapillil@gmail.com>
+Date:   Tue May 14 10:48:37 2019 +0530
+
+    adding a txt file
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git reverse bc381f926f0d0571d9717fb309c6b3fef30411f9
+git: 'reverse' is not a git command. See 'git --help'.
+
+Did you mean this?
+	rev-parse
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ git revert bc381f926f0d0571d9717fb309c6b3fef30411f9
+[master df40058] Revert "changing a more txt file"
+ 3 files changed, 9 deletions(-)
+ delete mode 100644 f1
+ delete mode 100644 f2
+ delete mode 100644 f3
+hduser@student-OptiPlex-3020:~/Desktop/Shabs$ 
+
